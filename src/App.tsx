@@ -1,23 +1,49 @@
+//
+// Import Base Components
+//
 import React from 'react';
-import logo from './assets/logo.svg';
+import { Route, Switch } from "react-router-dom";
+
+//
+// Import Assets
+//
 import './assets/App.css';
-import { NavLink} from "react-router-dom";
+import logo from './assets/logo.svg';
 
+//
+// Import Component
+//
+import TheNavigation from "./components/TheNavigation";
+import TheFooter from "./components/TheFooter";
 
-function App() {
+//
+// Import Views
+//
+import Home from "./views/Home";
+import Tunes from "./views/Tunes";
+import About from "./views/About";
+
+//
+// Render App Component
+//
+const App: React.FC = () => {
   return (
     <div className="App container mx-auto">
       <header className="App-header py-16">
-        <nav className="flex justify-center items-center">
-          <NavLink className="nav-link" to="/">Home</NavLink>
-          <NavLink className="nav-link" to="/tunes">Tunes</NavLink>
-          <NavLink className="nav-link" to="/about">About</NavLink>
-        </nav>
+          <TheNavigation/>
       </header>
 
       <main>
-        <img src={logo} className="App-logo" alt="logo" />
+          <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/tunes" component={Tunes} />
+              <Route path="/About" component={About} />
+          </Switch>
       </main>
+
+        <footer>
+            <TheFooter />
+        </footer>
     </div>
   );
 }

@@ -5,3 +5,7 @@
 .active {
 	@apply text-red-500
 }
+
+.site-title {
+	@apply text-center text-6xl text-white mb-16
+}
