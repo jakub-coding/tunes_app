@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/logo.svg';
+import './assets/App.css';
+import { NavLink} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App container mx-auto">
+      <header className="App-header py-16">
+        <nav className="flex justify-center items-center">
+          <NavLink className="nav-link" to="/">Home</NavLink>
+          <NavLink className="nav-link" to="/tunes">Tunes</NavLink>
+          <NavLink className="nav-link" to="/about">About</NavLink>
+        </nav>
       </header>
+
+      <main>
+        <img src={logo} className="App-logo" alt="logo" />
+      </main>
     </div>
   );
 }
