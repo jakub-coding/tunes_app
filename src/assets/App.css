@@ -7,5 +7,13 @@
 }
 
 .site-title {
-	@apply text-center text-6xl text-white mb-16
+	@apply text-center text-6xl text-gray-100 mb-16
+}
+
+.site-title-green {
+	@apply text-center text-6xl text-green-500 mb-16
+}
+
+.site-title-red {
+	@apply text-center text-6xl text-red-500 mb-16
 }

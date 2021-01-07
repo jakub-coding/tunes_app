@@ -1,10 +1,8 @@
 import React from 'react'
-import logo from "../assets/logo.svg";
-
 
 const TheFooter: React.FC = () => {
     return (
-        <img src={logo} className="App-logo" alt="logo" />
+        <p className="text-center text-gray-900 text-sm py-4 mt-4">&copy; 2021 Copyright - All rights reserved</p>
     )
 }
 

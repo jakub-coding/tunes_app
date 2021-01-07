@@ -8,7 +8,6 @@ import { Route, Switch } from "react-router-dom";
 // Import Assets
 //
 import './assets/App.css';
-import logo from './assets/logo.svg';
 
 //
 // Import Component
