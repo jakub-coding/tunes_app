@@ -9,7 +9,7 @@ const Tunes: React.FC = () => {
     // State
     const [searchQuery, setSearchQuery] = useState('');
     const [songs, setSongs] = useState([
-       /* {
+        {
             id: 1,
             artist: 'Horký že slíže',
             track: 'trapny vietor',
@@ -23,7 +23,7 @@ const Tunes: React.FC = () => {
             id: 3,
             artist: 'horký že slíže',
             track: 'Logická hádanka'
-        }*/
+        }
     ])
     //
     // *** methods ***
@@ -31,7 +31,7 @@ const Tunes: React.FC = () => {
 
     //Callback
     const handleSearchFormSubmit = (data: string) => {
-        /*const newSong = {
+        const newSong = {
             id: Math.max(...songs.map(s => s.id)) +1,
             artist: 'Horký že slíže',
             track: data,
@@ -39,7 +39,7 @@ const Tunes: React.FC = () => {
 
         setSongs([
             ...songs, newSong
-        ])*/
+        ])
     }
     //Callback
     const handleInputChange = (data: string) => {
